@@ -1,5 +1,3 @@
-# LogAnalyzer
-
 ## Prerequisites
 
 1. Node.JS 22.x.x(Latest LTS)

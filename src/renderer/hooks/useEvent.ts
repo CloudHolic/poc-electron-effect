@@ -1,8 +1,8 @@
 import { Effect } from 'effect';
-import { EventServiceContext } from '@/services/events/eventContext';
-import { EventPayload, EventListener } from '@/services/events/types';
+import { EventServiceContext } from '../services/events/eventContext';
+import { EventPayload, EventListener } from '../services/events/types';
 import { useEffect, useState } from 'react';
-import { EventServiceLayer } from '@/services/events/eventService';
+import { EventServiceLayer } from '../services/events/eventService';
 
 /**
  * 이벤트를 발행하는 함수를 제공하는 커스텀 훅.<br/>

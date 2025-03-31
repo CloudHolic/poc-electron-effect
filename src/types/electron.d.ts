@@ -1,5 +1,5 @@
 declare namespace Electron {
-  interface IpcRenderer {
+  type IpcRenderer = {
     send: (channel: string, data: any) => void;
     invoke: (channel: string, data: any) => Promise<any>;
     receive: (channel: string, func: (...args: any[]) => void) => void;
@@ -8,7 +8,7 @@ declare namespace Electron {
 }
 
 declare global {
-  interface Window {
+  type Window = {
     electron: Electron.IpcRenderer;
   }
 }

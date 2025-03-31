@@ -1,6 +1,6 @@
 import { Effect, Layer } from 'effect';
-import { EventListener, EventPayload, EventService } from '@/services/events/types';
-import { EventServiceContext } from '@/services/events/eventContext';
+import { EventListener, EventPayload, EventService } from './types';
+import { EventServiceContext } from './eventContext';
 
 class EventServiceImpl implements EventService {
   private listeners: Map<string, Set<EventListener<any>>> = new Map();

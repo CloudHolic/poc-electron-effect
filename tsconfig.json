@@ -27,12 +27,6 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
 
-    // Path
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/renderer/*"]
-    },
-
     // Library
     "lib": ["ES2020", "DOM", "DOM.Iterable"]
   },

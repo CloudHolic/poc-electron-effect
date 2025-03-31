@@ -1,9 +1,13 @@
 {
-  "name": "loganalyzer",
-  "version": "1.0.0",
-  "description": "CCU2 Log Analyzer",
+  "name": "poc-electron-effect",
+  "version": "0.0.1",
+  "description": "Poc for React+Effect+Electron+Vite",
   "license": "MIT",
-  "author": "suresofttech",
+  "author": {
+    "name": "CloudHolic",
+    "email": "cloudholic@pm.me",
+    "url": "https://github.com/CloudHolic"
+  },
   "type": "commonjs",
   "main": ".vite/build/main.js",
   "scripts": {

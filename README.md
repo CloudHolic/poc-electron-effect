@@ -17,6 +17,7 @@
   - See /src/renderer/hooks
   - useEffectCache.ts: Provide some caching hooks different from useMemo, useCallback.
   - useEvent.ts: Provide eventing system.
+  - useZeroMq.ts: Provide ZeroMQ patterns.
 
 
 ## What's next

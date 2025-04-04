@@ -1,6 +1,6 @@
 import { Effect } from 'effect';
 import { EventServiceContext } from '../services/events/eventContext';
-import { EventPayload, EventListener } from '../services/events/types';
+import type { EventPayload, EventListener } from '../types/events';
 import { useEffect, useState } from 'react';
 import { EventServiceLayer } from '../services/events/eventService';
 

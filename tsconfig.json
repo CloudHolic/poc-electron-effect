@@ -8,6 +8,7 @@
     "moduleResolution": "bundler",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
 
     // with Vite
     "isolatedModules": true,
@@ -26,6 +27,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
+    "importsNotUsedAsValues": "error",
 
     // Library
     "lib": ["ES2020", "DOM", "DOM.Iterable"]

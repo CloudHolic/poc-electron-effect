@@ -1,5 +1,5 @@
-import { Counter } from '../components/Counter';
-import { Logger } from '../components/Logger';
+import { Counter } from '../components/counter';
+import { Logger } from '../components/logger';
 
 export const EventPage = () => {
   return (

@@ -18,6 +18,7 @@ const createWindow = (): void => {
       devTools: process.env.NODE_ENV !== 'production',
       contextIsolation: true,
       nodeIntegration: false,
+      sandbox: false,
       preload: path.join(__dirname, 'preload.js')
     }
   });

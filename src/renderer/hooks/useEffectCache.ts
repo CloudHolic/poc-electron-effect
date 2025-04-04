@@ -11,6 +11,13 @@ const memoryStore = new Map<string, any>();
  * @param factory 캐싱할 Promise 생성 함수
  * @param deps 의존성 배열
  * @returns [data, isLoading, error, refresh]
+ * @example
+ * const userId = userData?.id;
+ * const [userPosts, isLoadingPosts, refreshPosts] = usePromiseCache(
+ *   'user-posts',
+ *   () => fetch(`/api/users/${userId}/posts`).then(res => res.json()),
+ *   [userId]
+ * );
  */
 export function usePromiseCache<T>(
   key: string,
@@ -29,6 +36,13 @@ export function usePromiseCache<T>(
  * @param deps 의존성 배열
  * @param timeToLive 유지될 시간 (단위: min)
  * @returns [data, isLoading, error, refresh]
+ * @example
+ * const userId = userData?.id;
+ * const [userPosts, isLoadingPosts, refreshPosts] = useTimedPromiseCache(
+ *   'user-posts',
+ *   () => fetch(`/api/users/${userId}/posts`).then(res => res.json()),
+ *   [userId], 10
+ * );
  */
 export function useTimedPromiseCache<T>(
   key: string,
@@ -47,6 +61,13 @@ export function useTimedPromiseCache<T>(
  * @param factory 캐싱할 Effect 생성 함수
  * @param deps 의존성 배열
  * @returns [data, isLoading, error, refresh]
+ * @example
+ * const userId = userData?.id;
+ * const [userPosts, isLoadingPosts, postsError, refreshPosts] = useEffectCache(
+ *   'user-posts',
+ *   () => Effect.promise(() => fetch(`/api/users/${userId}/posts`).then(res => res.json())),
+ *   [userId]
+ * );
  */
 export function useEffectCache<A, E>(
   key: string,
@@ -63,6 +84,13 @@ export function useEffectCache<A, E>(
  * @param deps 의존성 배열
  * @param timeToLive 유지될 시간 (단위: min)
  * @returns [data, isLoading, error, refresh]
+ * @example
+ * const userId = userData?.id;
+ * const [userPosts, isLoadingPosts, postsError, refreshPosts] = useEffectTimedCache(
+ *   'user-posts',
+ *   () => Effect.promise(() => fetch(`/api/users/${userId}/posts`).then(res => res.json())),
+ *   [userId], 10
+ * );
  */
 export function useTimedEffectCache<A, E>(
   key: string,

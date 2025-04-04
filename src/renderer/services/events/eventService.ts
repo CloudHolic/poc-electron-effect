@@ -1,5 +1,5 @@
 import { Effect, Layer } from 'effect';
-import { EventListener, EventPayload, EventService } from './types';
+import { EventListener, EventPayload, EventService } from '../../types/events';
 import { EventServiceContext } from './eventContext';
 
 class EventServiceImpl implements EventService {
